@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bags",
+  "info": {
+    "name": "Bag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "administratifs": {
+      "collection": "administratif"
+    },
+    "outillages": {
+      "collection": "outillages"
+    },
+    "outillages_a_mains": {
+      "collection": "outillages-a-main"
+    },
+    "vehicules": {
+      "collection": "vehicules"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

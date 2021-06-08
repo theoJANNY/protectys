@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "administratifs",
+  "info": {
+    "name": "Administratif"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Designation": {
+      "type": "string"
+    },
+    "Marque": {
+      "type": "string"
+    },
+    "Taille": {
+      "type": "string"
+    },
+    "Num_IMEI": {
+      "type": "integer"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Etat": {
+      "type": "enumeration",
+      "enum": [
+        "Bon",
+        "Mauvais",
+        "Abime",
+        "Trace_usure"
+      ]
+    },
+    "Prix_TTC": {
+      "type": "float"
+    }
+  }
+}

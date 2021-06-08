@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "outillages_a_mains",
+  "info": {
+    "name": "Outillages a main"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Designation": {
+      "type": "string"
+    },
+    "Observations": {
+      "type": "richtext"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Etat": {
+      "type": "enumeration",
+      "enum": [
+        "Bon",
+        "Mauvais",
+        "Abime",
+        "Trace_usure"
+      ]
+    },
+    "Prix_TTC": {
+      "type": "float"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/administratifs",
+      "handler": "administratif.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/administratifs/count",
+      "handler": "administratif.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/administratifs/:id",
+      "handler": "administratif.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/administratifs",
+      "handler": "administratif.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/administratifs/:id",
+      "handler": "administratif.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/administratifs/:id",
+      "handler": "administratif.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
