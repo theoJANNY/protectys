@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "vehicules",
   "info": {
-    "name": "Vehicules"
+    "name": "Vehicules",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -31,6 +32,10 @@
     },
     "Prix_TTC": {
       "type": "integer"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
