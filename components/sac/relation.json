@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sac_relations",
+  "info": {
+    "name": "Relation",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "administratifs": {
+      "collection": "administratif"
+    },
+    "outillages": {
+      "collection": "outillages"
+    },
+    "outillages_a_mains": {
+      "collection": "outillages-a-main"
+    },
+    "vehicules": {
+      "collection": "vehicules"
+    }
+  }
+}

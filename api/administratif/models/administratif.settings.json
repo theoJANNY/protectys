@@ -24,12 +24,13 @@
     "Num_IMEI": {
       "type": "integer"
     },
-    "Date": {
+    "Date_ajout": {
       "type": "date"
     },
     "Etat": {
       "type": "enumeration",
       "enum": [
+        "Neuf",
         "Bon",
         "Mauvais",
         "Abime",
@@ -39,7 +40,18 @@
     "Prix_TTC": {
       "type": "float"
     },
+    "Date_sortie": {
+      "type": "date"
+    },
+    "Motif_sortie": {
+      "type": "enumeration",
+      "enum": [
+        "HS",
+        "Perdu"
+      ]
+    },
     "users_permissions_user": {
+      "via": "administratifs",
       "plugin": "users-permissions",
       "model": "user"
     }

@@ -24,7 +24,7 @@
     "num_serie": {
       "type": "string"
     },
-    "Date": {
+    "Date_ajout": {
       "type": "date"
     },
     "Etat": {
@@ -39,7 +39,18 @@
     "Prix_TTC": {
       "type": "float"
     },
+    "Date_sortie": {
+      "type": "date"
+    },
+    "Motif_sortie": {
+      "type": "enumeration",
+      "enum": [
+        "HS",
+        "Perdu"
+      ]
+    },
     "users_permissions_user": {
+      "via": "outillages",
       "plugin": "users-permissions",
       "model": "user"
     }

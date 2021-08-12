@@ -58,6 +58,26 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "administratifs": {
+      "via": "users_permissions_user",
+      "collection": "administratif"
+    },
+    "outillages": {
+      "via": "users_permissions_user",
+      "collection": "outillages"
+    },
+    "outillages_a_mains": {
+      "via": "users_permissions_user",
+      "collection": "outillages-a-main"
+    },
+    "vehicules": {
+      "via": "users_permissions_user",
+      "collection": "vehicules"
+    },
+    "procedures": {
+      "via": "users_permissions_users",
+      "collection": "procedures"
     }
   }
 }

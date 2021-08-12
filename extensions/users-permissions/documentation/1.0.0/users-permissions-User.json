@@ -1250,6 +1250,286 @@
                 "type": "string"
               }
             }
+          },
+          "administratifs": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Designation": {
+                  "type": "string"
+                },
+                "Marque": {
+                  "type": "string"
+                },
+                "Taille": {
+                  "type": "string"
+                },
+                "Num_IMEI": {
+                  "type": "integer"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Etat": {
+                  "type": "string",
+                  "enum": [
+                    "Neuf",
+                    "Bon",
+                    "Mauvais",
+                    "Abime",
+                    "Trace_usure"
+                  ]
+                },
+                "Prix_TTC": {
+                  "type": "number"
+                },
+                "Date_sortie": {
+                  "type": "string"
+                },
+                "Motif_sortie": {
+                  "type": "string",
+                  "enum": [
+                    "HS",
+                    "Perdu"
+                  ]
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "outillages": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Designation": {
+                  "type": "string"
+                },
+                "Marque": {
+                  "type": "string"
+                },
+                "Reference": {
+                  "type": "string"
+                },
+                "num_serie": {
+                  "type": "string"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Etat": {
+                  "type": "string",
+                  "enum": [
+                    "Bon",
+                    "Mauvais",
+                    "Abime",
+                    "Trace_usure"
+                  ]
+                },
+                "Prix_TTC": {
+                  "type": "number"
+                },
+                "Date_sortie": {
+                  "type": "string"
+                },
+                "Motif_sortie": {
+                  "type": "string",
+                  "enum": [
+                    "HS",
+                    "Perdu"
+                  ]
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "outillages_a_mains": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Designation": {
+                  "type": "string"
+                },
+                "Observations": {
+                  "type": "string"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Etat": {
+                  "type": "string",
+                  "enum": [
+                    "Bon",
+                    "Mauvais",
+                    "Abime",
+                    "Trace_usure"
+                  ]
+                },
+                "Prix_TTC": {
+                  "type": "number"
+                },
+                "Date_sortie": {
+                  "type": "string"
+                },
+                "Motif_sortie": {
+                  "type": "string",
+                  "enum": [
+                    "HS",
+                    "Perdu"
+                  ]
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "vehicules": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Designation": {
+                  "type": "string"
+                },
+                "Observations": {
+                  "type": "string"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Etat": {
+                  "type": "string",
+                  "enum": [
+                    "Bon",
+                    "Mauvais",
+                    "Abime",
+                    "Trace_usure"
+                  ]
+                },
+                "Prix_TTC": {
+                  "type": "integer"
+                },
+                "Date_sortie": {
+                  "type": "string"
+                },
+                "Motif_sortie": {
+                  "type": "string",
+                  "enum": [
+                    "HS",
+                    "Perdu"
+                  ]
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "procedures": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "file": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "Version": {
+                  "type": "string"
+                },
+                "Date": {
+                  "type": "string"
+                },
+                "users_permissions_users": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1291,6 +1571,36 @@
           },
           "role": {
             "type": "string"
+          },
+          "administratifs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "outillages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "outillages_a_mains": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "vehicules": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "procedures": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"

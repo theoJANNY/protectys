@@ -534,13 +534,14 @@
           "Num_IMEI": {
             "type": "integer"
           },
-          "Date": {
+          "Date_ajout": {
             "type": "string",
             "format": "date"
           },
           "Etat": {
             "type": "string",
             "enum": [
+              "Neuf",
               "Bon",
               "Mauvais",
               "Abime",
@@ -549,6 +550,17 @@
           },
           "Prix_TTC": {
             "type": "number"
+          },
+          "Date_sortie": {
+            "type": "string",
+            "format": "date"
+          },
+          "Motif_sortie": {
+            "type": "string",
+            "enum": [
+              "HS",
+              "Perdu"
+            ]
           },
           "users_permissions_user": {
             "required": [
@@ -587,6 +599,36 @@
               "role": {
                 "type": "string"
               },
+              "administratifs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "outillages": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "outillages_a_mains": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "vehicules": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "procedures": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },
@@ -615,13 +657,14 @@
           "Num_IMEI": {
             "type": "integer"
           },
-          "Date": {
+          "Date_ajout": {
             "type": "string",
             "format": "date"
           },
           "Etat": {
             "type": "string",
             "enum": [
+              "Neuf",
               "Bon",
               "Mauvais",
               "Abime",
@@ -630,6 +673,17 @@
           },
           "Prix_TTC": {
             "type": "number"
+          },
+          "Date_sortie": {
+            "type": "string",
+            "format": "date"
+          },
+          "Motif_sortie": {
+            "type": "string",
+            "enum": [
+              "HS",
+              "Perdu"
+            ]
           },
           "users_permissions_user": {
             "type": "string"

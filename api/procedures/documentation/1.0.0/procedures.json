@@ -1,19 +1,18 @@
 {
   "paths": {
-    "/outillages-a-mains": {
+    "/procedures": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the procedures's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve procedures document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Procedures"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedures"
         ],
         "parameters": [
           {
@@ -195,18 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new procedures record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve procedures document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Procedures"
                 }
               }
             }
@@ -244,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedures"
         ],
         "requestBody": {
           "description": "",
@@ -252,26 +247,26 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOutillages-a-main"
+                "$ref": "#/components/schemas/NewProcedures"
               }
             }
           }
         }
       }
     },
-    "/outillages-a-mains/count": {
+    "/procedures/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the numver of procedures documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve procedures document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "foo": {
-                      "type": "string"
+                    "count": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -311,26 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedures"
         ],
         "parameters": []
       }
     },
-    "/outillages-a-mains/{id}": {
+    "/procedures/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one procedures record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve procedures document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Procedures"
                 }
               }
             }
@@ -368,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedures"
         ],
         "parameters": [
           {
@@ -385,18 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single procedures record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve procedures document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Procedures"
                 }
               }
             }
@@ -434,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedures"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOutillages-a-main"
+                "$ref": "#/components/schemas/NewProcedures"
               }
             }
           }
@@ -462,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single procedures record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single procedures based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedures"
         ],
         "parameters": [
           {
@@ -527,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Outillages-a-main": {
+      "Procedures": {
         "required": [
           "id"
         ],
@@ -535,111 +522,161 @@
           "id": {
             "type": "string"
           },
-          "Designation": {
+          "file": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "Name": {
             "type": "string"
           },
-          "Observations": {
+          "Version": {
             "type": "string"
           },
-          "Date_ajout": {
+          "Date": {
             "type": "string",
             "format": "date"
           },
-          "Etat": {
-            "type": "string",
-            "enum": [
-              "Bon",
-              "Mauvais",
-              "Abime",
-              "Trace_usure"
-            ]
-          },
-          "Prix_TTC": {
-            "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
-          },
-          "Motif_sortie": {
-            "type": "string",
-            "enum": [
-              "HS",
-              "Perdu"
-            ]
-          },
-          "users_permissions_user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "administratifs": {
-                "type": "array",
-                "items": {
+          "users_permissions_users": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "username",
+                "email"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                },
+                "resetPasswordToken": {
+                  "type": "string"
+                },
+                "confirmationToken": {
+                  "type": "string"
+                },
+                "confirmed": {
+                  "type": "boolean"
+                },
+                "blocked": {
+                  "type": "boolean"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "administratifs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "outillages": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "outillages_a_mains": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "vehicules": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "procedures": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "outillages": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "outillages_a_mains": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "vehicules": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "procedures": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -649,43 +686,23 @@
           }
         }
       },
-      "NewOutillages-a-main": {
+      "NewProcedures": {
         "properties": {
-          "Designation": {
+          "Name": {
             "type": "string"
           },
-          "Observations": {
+          "Version": {
             "type": "string"
           },
-          "Date_ajout": {
+          "Date": {
             "type": "string",
             "format": "date"
           },
-          "Etat": {
-            "type": "string",
-            "enum": [
-              "Bon",
-              "Mauvais",
-              "Abime",
-              "Trace_usure"
-            ]
-          },
-          "Prix_TTC": {
-            "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
-          },
-          "Motif_sortie": {
-            "type": "string",
-            "enum": [
-              "HS",
-              "Perdu"
-            ]
-          },
-          "users_permissions_user": {
-            "type": "string"
+          "users_permissions_users": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -701,5 +718,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Procedures"
+    }
+  ]
 }

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "procedures",
+  "info": {
+    "name": "Procédures",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "file": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Version": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "procedures",
+      "dominant": true
+    }
+  }
+}
