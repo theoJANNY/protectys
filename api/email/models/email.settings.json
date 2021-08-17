@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emails",
+  "info": {
+    "name": "Email"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Sujet": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "recepteur": {
+      "type": "email"
+    }
+  }
+}
