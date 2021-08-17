@@ -75,9 +75,9 @@
       "via": "users_permissions_user",
       "collection": "vehicules"
     },
-    "procedures": {
-      "via": "users_permissions_users",
-      "collection": "procedures"
+    "procedures_utilisateurs": {
+      "via": "users_permissions_user",
+      "collection": "procedures-utilisateur"
     }
   }
 }

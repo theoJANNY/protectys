@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/administratifs": {
+    "/procedures-utilisateurs": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,9 +10,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Administratif"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Administratif"
+          "Procedures-utilisateur"
         ],
         "parameters": [
           {
@@ -201,72 +202,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Administratif"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Administratif"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewAdministratif"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/administratifs/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,12 +244,22 @@
         },
         "summary": "",
         "tags": [
-          "Administratif"
+          "Procedures-utilisateur"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewProcedures-utilisateur"
+              }
+            }
+          }
+        }
       }
     },
-    "/administratifs/{id}": {
+    "/procedures-utilisateurs/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +269,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Administratif"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Administratif"
+          "Procedures-utilisateur"
+        ],
+        "parameters": []
+      }
+    },
+    "/procedures-utilisateurs/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Procedures-utilisateur"
         ],
         "parameters": [
           {
@@ -383,7 +392,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Administratif"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Administratif"
+          "Procedures-utilisateur"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAdministratif"
+                "$ref": "#/components/schemas/NewProcedures-utilisateur"
               }
             }
           }
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Administratif"
+          "Procedures-utilisateur"
         ],
         "parameters": [
           {
@@ -514,53 +527,13 @@
   },
   "components": {
     "schemas": {
-      "Administratif": {
+      "Procedures-utilisateur": {
         "required": [
           "id"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "Designation": {
-            "type": "string"
-          },
-          "Marque": {
-            "type": "string"
-          },
-          "Taille": {
-            "type": "string"
-          },
-          "Num_IMEI": {
-            "type": "integer"
-          },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
-          "Etat": {
-            "type": "string",
-            "enum": [
-              "Neuf",
-              "Bon",
-              "Mauvais",
-              "Abime",
-              "Trace_usure"
-            ]
-          },
-          "Prix_TTC": {
-            "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
-          },
-          "Motif_sortie": {
-            "type": "string",
-            "enum": [
-              "HS",
-              "Perdu"
-            ]
           },
           "users_permissions_user": {
             "required": [
@@ -637,55 +610,69 @@
               }
             }
           },
+          "Valider": {
+            "type": "boolean",
+            "default": false
+          },
+          "procedure": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "file": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Name": {
+                "type": "string"
+              },
+              "Version": {
+                "type": "string"
+              },
+              "Date": {
+                "type": "string"
+              },
+              "procedures_utilisateur": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "Appellation": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewAdministratif": {
+      "NewProcedures-utilisateur": {
         "properties": {
-          "Designation": {
-            "type": "string"
-          },
-          "Marque": {
-            "type": "string"
-          },
-          "Taille": {
-            "type": "string"
-          },
-          "Num_IMEI": {
-            "type": "integer"
-          },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
-          "Etat": {
-            "type": "string",
-            "enum": [
-              "Neuf",
-              "Bon",
-              "Mauvais",
-              "Abime",
-              "Trace_usure"
-            ]
-          },
-          "Prix_TTC": {
-            "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
-          },
-          "Motif_sortie": {
-            "type": "string",
-            "enum": [
-              "HS",
-              "Perdu"
-            ]
-          },
           "users_permissions_user": {
+            "type": "string"
+          },
+          "Valider": {
+            "type": "boolean",
+            "default": false
+          },
+          "procedure": {
+            "type": "string"
+          },
+          "Appellation": {
             "type": "string"
           },
           "published_at": {
@@ -702,9 +689,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Administratif"
-    }
-  ]
+  "tags": []
 }

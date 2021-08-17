@@ -1488,7 +1488,7 @@
               }
             }
           },
-          "procedures": {
+          "procedures_utilisateurs": {
             "type": "array",
             "items": {
               "required": [
@@ -1498,26 +1498,17 @@
                 "id": {
                   "type": "string"
                 },
-                "file": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "Name": {
+                "users_permissions_user": {
                   "type": "string"
                 },
-                "Version": {
+                "Valider": {
+                  "type": "boolean"
+                },
+                "procedure": {
                   "type": "string"
                 },
-                "Date": {
+                "Appellation": {
                   "type": "string"
-                },
-                "users_permissions_users": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -1596,7 +1587,7 @@
               "type": "string"
             }
           },
-          "procedures": {
+          "procedures_utilisateurs": {
             "type": "array",
             "items": {
               "type": "string"

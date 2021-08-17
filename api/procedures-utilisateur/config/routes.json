@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/procedures-utilisateurs",
+      "handler": "procedures-utilisateur.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/procedures-utilisateurs/count",
+      "handler": "procedures-utilisateur.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/procedures-utilisateurs/:id",
+      "handler": "procedures-utilisateur.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/procedures-utilisateurs",
+      "handler": "procedures-utilisateur.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/procedures-utilisateurs/:id",
+      "handler": "procedures-utilisateur.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/procedures-utilisateurs/:id",
+      "handler": "procedures-utilisateur.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

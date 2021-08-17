@@ -602,81 +602,34 @@
             "type": "string",
             "format": "date"
           },
-          "users_permissions_users": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "username",
-                "email"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "username": {
-                  "type": "string"
-                },
-                "email": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "password": {
-                  "type": "string"
-                },
-                "resetPasswordToken": {
-                  "type": "string"
-                },
-                "confirmationToken": {
-                  "type": "string"
-                },
-                "confirmed": {
-                  "type": "boolean"
-                },
-                "blocked": {
-                  "type": "boolean"
-                },
-                "role": {
-                  "type": "string"
-                },
-                "administratifs": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "outillages": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "outillages_a_mains": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "vehicules": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "procedures": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+          "procedures_utilisateur": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "users_permissions_user": {
+                "type": "string"
+              },
+              "Valider": {
+                "type": "boolean"
+              },
+              "procedure": {
+                "type": "string"
+              },
+              "Appellation": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -698,11 +651,8 @@
             "type": "string",
             "format": "date"
           },
-          "users_permissions_users": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "procedures_utilisateur": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

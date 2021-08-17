@@ -629,7 +629,7 @@
                   "type": "string"
                 }
               },
-              "procedures": {
+              "procedures_utilisateurs": {
                 "type": "array",
                 "items": {
                   "type": "string"

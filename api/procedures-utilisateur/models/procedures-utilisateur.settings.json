@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "procedures_utilisateurs",
+  "info": {
+    "name": "Procédures Utilisateur",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "via": "procedures_utilisateurs",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Valider": {
+      "type": "boolean",
+      "default": false
+    },
+    "procedure": {
+      "via": "procedures_utilisateur",
+      "model": "procedures"
+    },
+    "Appellation": {
+      "type": "string"
+    }
+  }
+}

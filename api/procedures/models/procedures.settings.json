@@ -33,11 +33,9 @@
     "Date": {
       "type": "date"
     },
-    "users_permissions_users": {
-      "plugin": "users-permissions",
-      "collection": "user",
-      "via": "procedures",
-      "dominant": true
+    "procedures_utilisateur": {
+      "via": "procedure",
+      "model": "procedures-utilisateur"
     }
   }
 }
