@@ -602,31 +602,34 @@
             "type": "string",
             "format": "date"
           },
-          "procedures_utilisateur": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "users_permissions_user": {
-                "type": "string"
-              },
-              "Valider": {
-                "type": "boolean"
-              },
-              "procedure": {
-                "type": "string"
-              },
-              "Appellation": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+          "procedures_utilisateurs": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "Valider": {
+                  "type": "boolean"
+                },
+                "Appellation": {
+                  "type": "string"
+                },
+                "procedure": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           }
@@ -644,8 +647,11 @@
             "type": "string",
             "format": "date"
           },
-          "procedures_utilisateur": {
-            "type": "string"
+          "procedures_utilisateurs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"

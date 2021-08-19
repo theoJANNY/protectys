@@ -21,12 +21,12 @@
       "type": "boolean",
       "default": false
     },
-    "procedure": {
-      "via": "procedures_utilisateur",
-      "model": "procedures"
-    },
     "Appellation": {
       "type": "string"
+    },
+    "procedure": {
+      "via": "procedures_utilisateurs",
+      "model": "procedures"
     }
   }
 }

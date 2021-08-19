@@ -33,9 +33,9 @@
     "Date": {
       "type": "date"
     },
-    "procedures_utilisateur": {
-      "via": "procedure",
-      "model": "procedures-utilisateur"
+    "procedures_utilisateurs": {
+      "collection": "procedures-utilisateur",
+      "via": "procedure"
     }
   }
 }

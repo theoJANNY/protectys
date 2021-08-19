@@ -614,6 +614,9 @@
             "type": "boolean",
             "default": false
           },
+          "Appellation": {
+            "type": "string"
+          },
           "procedure": {
             "required": [
               "id"
@@ -637,8 +640,11 @@
               "Date": {
                 "type": "string"
               },
-              "procedures_utilisateur": {
-                "type": "string"
+              "procedures_utilisateurs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "created_by": {
                 "type": "string"
@@ -647,9 +653,6 @@
                 "type": "string"
               }
             }
-          },
-          "Appellation": {
-            "type": "string"
           }
         }
       },
@@ -662,10 +665,10 @@
             "type": "boolean",
             "default": false
           },
-          "procedure": {
+          "Appellation": {
             "type": "string"
           },
-          "Appellation": {
+          "procedure": {
             "type": "string"
           },
           "created_by": {
