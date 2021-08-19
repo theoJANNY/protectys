@@ -1302,9 +1302,6 @@
                 "users_permissions_user": {
                   "type": "string"
                 },
-                "published_at": {
-                  "type": "string"
-                },
                 "created_by": {
                   "type": "string"
                 },
@@ -1364,9 +1361,6 @@
                 "users_permissions_user": {
                   "type": "string"
                 },
-                "published_at": {
-                  "type": "string"
-                },
                 "created_by": {
                   "type": "string"
                 },
@@ -1418,9 +1412,6 @@
                   ]
                 },
                 "users_permissions_user": {
-                  "type": "string"
-                },
-                "published_at": {
                   "type": "string"
                 },
                 "created_by": {
@@ -1476,9 +1467,6 @@
                 "users_permissions_user": {
                   "type": "string"
                 },
-                "published_at": {
-                  "type": "string"
-                },
                 "created_by": {
                   "type": "string"
                 },
@@ -1508,9 +1496,6 @@
                   "type": "string"
                 },
                 "Appellation": {
-                  "type": "string"
-                },
-                "published_at": {
                   "type": "string"
                 },
                 "created_by": {
