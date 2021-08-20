@@ -1,18 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "procedures",
+  "collectionName": "condition_generales",
   "info": {
-    "name": "Procédure",
-    "description": ""
+    "name": "Condition générales"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "file": {
+    "Condition_utilisation": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -23,19 +22,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "Name": {
-      "type": "string"
-    },
-    "Version": {
-      "type": "string"
-    },
-    "Date": {
-      "type": "date"
-    },
-    "procedures_utilisateurs": {
-      "collection": "procedures-utilisateur",
-      "via": "procedure"
     }
   }
 }

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "outillages",
+  "collectionName": "habillement_eip_s",
   "info": {
-    "name": "Outillage",
+    "name": "Habillement -EIP-",
     "description": ""
   },
   "options": {
@@ -15,15 +15,6 @@
     "Designation": {
       "type": "string"
     },
-    "Marque": {
-      "type": "string"
-    },
-    "Reference": {
-      "type": "string"
-    },
-    "num_serie": {
-      "type": "string"
-    },
     "Date_ajout": {
       "type": "date"
     },
@@ -33,11 +24,9 @@
         "Bon",
         "Mauvais",
         "Abime",
-        "Trace_usure"
+        "Trace_usure",
+        "neuf"
       ]
-    },
-    "Prix_TTC": {
-      "type": "float"
     },
     "Date_sortie": {
       "type": "date"
@@ -50,9 +39,21 @@
       ]
     },
     "users_permissions_user": {
-      "via": "outillages",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "habillement_eips"
+    },
+    "Marque": {
+      "type": "string"
+    },
+    "Taille": {
+      "type": "string"
+    },
+    "NUM_IMEI": {
+      "type": "integer"
+    },
+    "Prix_TTC": {
+      "type": "decimal"
     },
     "Valider": {
       "type": "boolean",

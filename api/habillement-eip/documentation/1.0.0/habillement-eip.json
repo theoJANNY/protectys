@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/outillages": {
+    "/habillement-eips": {
       "get": {
         "deprecated": false,
-        "description": "Find all the outillages's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Outillages"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Habillement-eip"
         ],
         "parameters": [
           {
@@ -194,79 +195,16 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new outillages record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Outillages"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Outillages"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewOutillages"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/outillages/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the numver of outillages documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,22 +244,36 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Habillement-eip"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewHabillement-eip"
+              }
+            }
+          }
+        }
       }
     },
-    "/outillages/{id}": {
+    "/habillement-eips/count": {
       "get": {
         "deprecated": false,
-        "description": "Find one outillages record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Outillages"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Habillement-eip"
+        ],
+        "parameters": []
+      }
+    },
+    "/habillement-eips/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Habillement-eip"
         ],
         "parameters": [
           {
@@ -376,14 +385,18 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single outillages record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Outillages"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Habillement-eip"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOutillages"
+                "$ref": "#/components/schemas/NewHabillement-eip"
               }
             }
           }
@@ -449,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single outillages record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single outillages based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Habillement-eip"
         ],
         "parameters": [
           {
@@ -514,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Outillages": {
+      "Habillement-eip": {
         "required": [
           "id"
         ],
@@ -523,15 +536,6 @@
             "type": "string"
           },
           "Designation": {
-            "type": "string"
-          },
-          "Marque": {
-            "type": "string"
-          },
-          "Reference": {
-            "type": "string"
-          },
-          "num_serie": {
             "type": "string"
           },
           "Date_ajout": {
@@ -544,11 +548,9 @@
               "Bon",
               "Mauvais",
               "Abime",
-              "Trace_usure"
+              "Trace_usure",
+              "neuf"
             ]
-          },
-          "Prix_TTC": {
-            "type": "number"
           },
           "Date_sortie": {
             "type": "string",
@@ -648,24 +650,27 @@
               }
             }
           },
+          "Marque": {
+            "type": "string"
+          },
+          "Taille": {
+            "type": "string"
+          },
+          "NUM_IMEI": {
+            "type": "integer"
+          },
+          "Prix_TTC": {
+            "type": "number"
+          },
           "Valider": {
             "type": "boolean",
             "default": false
           }
         }
       },
-      "NewOutillages": {
+      "NewHabillement-eip": {
         "properties": {
           "Designation": {
-            "type": "string"
-          },
-          "Marque": {
-            "type": "string"
-          },
-          "Reference": {
-            "type": "string"
-          },
-          "num_serie": {
             "type": "string"
           },
           "Date_ajout": {
@@ -678,11 +683,9 @@
               "Bon",
               "Mauvais",
               "Abime",
-              "Trace_usure"
+              "Trace_usure",
+              "neuf"
             ]
-          },
-          "Prix_TTC": {
-            "type": "number"
           },
           "Date_sortie": {
             "type": "string",
@@ -698,6 +701,18 @@
           "users_permissions_user": {
             "type": "string"
           },
+          "Marque": {
+            "type": "string"
+          },
+          "Taille": {
+            "type": "string"
+          },
+          "NUM_IMEI": {
+            "type": "integer"
+          },
+          "Prix_TTC": {
+            "type": "number"
+          },
           "Valider": {
             "type": "boolean",
             "default": false
@@ -712,9 +727,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Outillages"
-    }
-  ]
+  "tags": []
 }

@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/outillages": {
+    "/vehicule-amenagements": {
       "get": {
         "deprecated": false,
-        "description": "Find all the outillages's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Outillages"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Vehicule-amenagement"
         ],
         "parameters": [
           {
@@ -194,79 +195,16 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new outillages record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Outillages"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Outillages"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewOutillages"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/outillages/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the numver of outillages documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,22 +244,36 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Vehicule-amenagement"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewVehicule-amenagement"
+              }
+            }
+          }
+        }
       }
     },
-    "/outillages/{id}": {
+    "/vehicule-amenagements/count": {
       "get": {
         "deprecated": false,
-        "description": "Find one outillages record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Outillages"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Vehicule-amenagement"
+        ],
+        "parameters": []
+      }
+    },
+    "/vehicule-amenagements/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Vehicule-amenagement"
         ],
         "parameters": [
           {
@@ -376,14 +385,18 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single outillages record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Outillages"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Vehicule-amenagement"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOutillages"
+                "$ref": "#/components/schemas/NewVehicule-amenagement"
               }
             }
           }
@@ -449,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single outillages record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single outillages based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Vehicule-amenagement"
         ],
         "parameters": [
           {
@@ -514,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Outillages": {
+      "Vehicule-amenagement": {
         "required": [
           "id"
         ],
@@ -525,14 +538,11 @@
           "Designation": {
             "type": "string"
           },
-          "Marque": {
+          "Observations": {
             "type": "string"
           },
-          "Reference": {
-            "type": "string"
-          },
-          "num_serie": {
-            "type": "string"
+          "Prix_TTC": {
+            "type": "number"
           },
           "Date_ajout": {
             "type": "string",
@@ -544,17 +554,15 @@
               "Bon",
               "Mauvais",
               "Abime",
-              "Trace_usure"
+              "Trace_usure",
+              "Neuf"
             ]
-          },
-          "Prix_TTC": {
-            "type": "number"
           },
           "Date_sortie": {
             "type": "string",
             "format": "date"
           },
-          "Motif_sortie": {
+          "Motif": {
             "type": "string",
             "enum": [
               "HS",
@@ -651,22 +659,23 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
-      "NewOutillages": {
+      "NewVehicule-amenagement": {
         "properties": {
           "Designation": {
             "type": "string"
           },
-          "Marque": {
+          "Observations": {
             "type": "string"
           },
-          "Reference": {
-            "type": "string"
-          },
-          "num_serie": {
-            "type": "string"
+          "Prix_TTC": {
+            "type": "number"
           },
           "Date_ajout": {
             "type": "string",
@@ -678,17 +687,15 @@
               "Bon",
               "Mauvais",
               "Abime",
-              "Trace_usure"
+              "Trace_usure",
+              "Neuf"
             ]
-          },
-          "Prix_TTC": {
-            "type": "number"
           },
           "Date_sortie": {
             "type": "string",
             "format": "date"
           },
-          "Motif_sortie": {
+          "Motif": {
             "type": "string",
             "enum": [
               "HS",
@@ -702,6 +709,10 @@
             "type": "boolean",
             "default": false
           },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
           "created_by": {
             "type": "string"
           },
@@ -712,9 +723,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Outillages"
-    }
-  ]
+  "tags": []
 }

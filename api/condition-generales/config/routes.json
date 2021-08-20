@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/condition-generales",
+      "handler": "condition-generales.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/condition-generales/count",
+      "handler": "condition-generales.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/condition-generales/:id",
+      "handler": "condition-generales.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/condition-generales",
+      "handler": "condition-generales.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/condition-generales/:id",
+      "handler": "condition-generales.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/condition-generales/:id",
+      "handler": "condition-generales.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

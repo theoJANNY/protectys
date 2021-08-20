@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vehicule-amenagements",
+      "handler": "vehicule-amenagement.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vehicule-amenagements/count",
+      "handler": "vehicule-amenagement.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vehicule-amenagements/:id",
+      "handler": "vehicule-amenagement.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vehicule-amenagements",
+      "handler": "vehicule-amenagement.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vehicule-amenagements/:id",
+      "handler": "vehicule-amenagement.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vehicule-amenagements/:id",
+      "handler": "vehicule-amenagement.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

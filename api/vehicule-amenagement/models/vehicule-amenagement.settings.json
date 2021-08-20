@@ -1,28 +1,25 @@
 {
   "kind": "collectionType",
-  "collectionName": "outillages",
+  "collectionName": "vehicule_amenagements",
   "info": {
-    "name": "Outillage",
+    "name": "Véhicule aménagement",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
     "Designation": {
       "type": "string"
     },
-    "Marque": {
-      "type": "string"
+    "Observations": {
+      "type": "richtext"
     },
-    "Reference": {
-      "type": "string"
-    },
-    "num_serie": {
-      "type": "string"
+    "Prix_TTC": {
+      "type": "decimal"
     },
     "Date_ajout": {
       "type": "date"
@@ -33,16 +30,14 @@
         "Bon",
         "Mauvais",
         "Abime",
-        "Trace_usure"
+        "Trace_usure",
+        "Neuf"
       ]
-    },
-    "Prix_TTC": {
-      "type": "float"
     },
     "Date_sortie": {
       "type": "date"
     },
-    "Motif_sortie": {
+    "Motif": {
       "type": "enumeration",
       "enum": [
         "HS",
@@ -50,9 +45,9 @@
       ]
     },
     "users_permissions_user": {
-      "via": "outillages",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "vehicule_amenagements"
     },
     "Valider": {
       "type": "boolean",

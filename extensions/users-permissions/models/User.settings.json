@@ -78,6 +78,14 @@
     "procedures_utilisateurs": {
       "via": "users_permissions_user",
       "collection": "procedures-utilisateur"
+    },
+    "habillement_eips": {
+      "via": "users_permissions_user",
+      "collection": "habillement-eip"
+    },
+    "vehicule_amenagements": {
+      "via": "users_permissions_user",
+      "collection": "vehicule-amenagement"
     }
   }
 }

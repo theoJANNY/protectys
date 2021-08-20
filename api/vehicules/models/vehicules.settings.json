@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "vehicules",
   "info": {
-    "name": "Vehicules",
+    "name": "Véhicule",
     "description": ""
   },
   "options": {
@@ -47,6 +47,10 @@
       "via": "vehicules",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "Valider": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

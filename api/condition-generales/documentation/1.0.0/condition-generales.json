@@ -1,18 +1,19 @@
 {
   "paths": {
-    "/outillages": {
+    "/condition-generales": {
       "get": {
         "deprecated": false,
-        "description": "Find all the outillages's records",
+        "description": "Find all the condition-generales's records",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "Retrieve condition-generales document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Outillages"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Condition-generales"
         ],
         "parameters": [
           {
@@ -194,79 +195,16 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new outillages record",
+        "description": "Create a new condition-generales record",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Outillages"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Outillages"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewOutillages"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/outillages/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the numver of outillages documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "Retrieve condition-generales document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,22 +244,36 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Condition-generales"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCondition-generales"
+              }
+            }
+          }
+        }
       }
     },
-    "/outillages/{id}": {
+    "/condition-generales/count": {
       "get": {
         "deprecated": false,
-        "description": "Find one outillages record",
+        "description": "Retrieve the numver of condition-generales documents",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "Retrieve condition-generales document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Outillages"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Condition-generales"
+        ],
+        "parameters": []
+      }
+    },
+    "/condition-generales/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Find one condition-generales record",
+        "responses": {
+          "200": {
+            "description": "Retrieve condition-generales document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Condition-generales"
         ],
         "parameters": [
           {
@@ -376,14 +385,18 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single outillages record",
+        "description": "Update a single condition-generales record",
         "responses": {
           "200": {
-            "description": "Retrieve outillages document(s)",
+            "description": "Retrieve condition-generales document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Outillages"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Condition-generales"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOutillages"
+                "$ref": "#/components/schemas/NewCondition-generales"
               }
             }
           }
@@ -449,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single outillages record",
+        "description": "Delete a single condition-generales record",
         "responses": {
           "200": {
-            "description": "deletes a single outillages based on the ID supplied",
+            "description": "deletes a single condition-generales based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages"
+          "Condition-generales"
         ],
         "parameters": [
           {
@@ -514,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Outillages": {
+      "Condition-generales": {
         "required": [
           "id"
         ],
@@ -522,185 +535,87 @@
           "id": {
             "type": "string"
           },
-          "Designation": {
-            "type": "string"
-          },
-          "Marque": {
-            "type": "string"
-          },
-          "Reference": {
-            "type": "string"
-          },
-          "num_serie": {
-            "type": "string"
-          },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
-          "Etat": {
-            "type": "string",
-            "enum": [
-              "Bon",
-              "Mauvais",
-              "Abime",
-              "Trace_usure"
-            ]
-          },
-          "Prix_TTC": {
-            "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
-          },
-          "Motif_sortie": {
-            "type": "string",
-            "enum": [
-              "HS",
-              "Perdu"
-            ]
-          },
-          "users_permissions_user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "administratifs": {
-                "type": "array",
-                "items": {
+          "Condition_utilisation": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "outillages": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "outillages_a_mains": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "vehicules": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "procedures_utilisateurs": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "habillement_eips": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "vehicule_amenagements": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
-          "Valider": {
-            "type": "boolean",
-            "default": false
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
-      "NewOutillages": {
+      "NewCondition-generales": {
         "properties": {
-          "Designation": {
-            "type": "string"
-          },
-          "Marque": {
-            "type": "string"
-          },
-          "Reference": {
-            "type": "string"
-          },
-          "num_serie": {
-            "type": "string"
-          },
-          "Date_ajout": {
+          "published_at": {
             "type": "string",
-            "format": "date"
-          },
-          "Etat": {
-            "type": "string",
-            "enum": [
-              "Bon",
-              "Mauvais",
-              "Abime",
-              "Trace_usure"
-            ]
-          },
-          "Prix_TTC": {
-            "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
-          },
-          "Motif_sortie": {
-            "type": "string",
-            "enum": [
-              "HS",
-              "Perdu"
-            ]
-          },
-          "users_permissions_user": {
-            "type": "string"
-          },
-          "Valider": {
-            "type": "boolean",
-            "default": false
+            "format": "date-time"
           },
           "created_by": {
             "type": "string"
@@ -712,9 +627,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Outillages"
-    }
-  ]
+  "tags": []
 }

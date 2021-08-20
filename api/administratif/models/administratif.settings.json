@@ -54,6 +54,10 @@
       "via": "administratifs",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "Valider": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

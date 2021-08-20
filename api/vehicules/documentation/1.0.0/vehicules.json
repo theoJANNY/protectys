@@ -622,6 +622,18 @@
                   "type": "string"
                 }
               },
+              "habillement_eips": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "vehicule_amenagements": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },
@@ -629,6 +641,10 @@
                 "type": "string"
               }
             }
+          },
+          "Valider": {
+            "type": "boolean",
+            "default": false
           }
         }
       },
@@ -669,6 +685,10 @@
           },
           "users_permissions_user": {
             "type": "string"
+          },
+          "Valider": {
+            "type": "boolean",
+            "default": false
           },
           "created_by": {
             "type": "string"

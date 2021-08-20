@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "outillages_a_mains",
+  "collectionName": "outillages-a-main",
   "info": {
-    "name": "Outillages a main",
+    "name": "Outillage à main",
     "description": ""
   },
   "options": {
@@ -47,6 +47,10 @@
       "via": "outillages_a_mains",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "Valider": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/habillement-eips",
+      "handler": "habillement-eip.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/habillement-eips/count",
+      "handler": "habillement-eip.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/habillement-eips/:id",
+      "handler": "habillement-eip.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/habillement-eips",
+      "handler": "habillement-eip.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/habillement-eips/:id",
+      "handler": "habillement-eip.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/habillement-eips/:id",
+      "handler": "habillement-eip.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

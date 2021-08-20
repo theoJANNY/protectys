@@ -591,6 +591,18 @@
                     "type": "string"
                   }
                 },
+                "habillement_eips": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "vehicule_amenagements": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "created_by": {
                   "type": "string"
                 },

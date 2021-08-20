@@ -1302,6 +1302,9 @@
                 "users_permissions_user": {
                   "type": "string"
                 },
+                "Valider": {
+                  "type": "boolean"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -1361,6 +1364,9 @@
                 "users_permissions_user": {
                   "type": "string"
                 },
+                "Valider": {
+                  "type": "boolean"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -1413,6 +1419,9 @@
                 },
                 "users_permissions_user": {
                   "type": "string"
+                },
+                "Valider": {
+                  "type": "boolean"
                 },
                 "created_by": {
                   "type": "string"
@@ -1467,6 +1476,9 @@
                 "users_permissions_user": {
                   "type": "string"
                 },
+                "Valider": {
+                  "type": "boolean"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -1492,10 +1504,133 @@
                 "Valider": {
                   "type": "boolean"
                 },
+                "Appellation": {
+                  "type": "string"
+                },
                 "procedure": {
                   "type": "string"
                 },
-                "Appellation": {
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "habillement_eips": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Designation": {
+                  "type": "string"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Etat": {
+                  "type": "string",
+                  "enum": [
+                    "Bon",
+                    "Mauvais",
+                    "Abime",
+                    "Trace_usure",
+                    "neuf"
+                  ]
+                },
+                "Date_sortie": {
+                  "type": "string"
+                },
+                "Motif_sortie": {
+                  "type": "string",
+                  "enum": [
+                    "HS",
+                    "Perdu"
+                  ]
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "Marque": {
+                  "type": "string"
+                },
+                "Taille": {
+                  "type": "string"
+                },
+                "NUM_IMEI": {
+                  "type": "integer"
+                },
+                "Prix_TTC": {
+                  "type": "number"
+                },
+                "Valider": {
+                  "type": "boolean"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "vehicule_amenagements": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Designation": {
+                  "type": "string"
+                },
+                "Observations": {
+                  "type": "string"
+                },
+                "Prix_TTC": {
+                  "type": "number"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Etat": {
+                  "type": "string",
+                  "enum": [
+                    "Bon",
+                    "Mauvais",
+                    "Abime",
+                    "Trace_usure",
+                    "Neuf"
+                  ]
+                },
+                "Date_sortie": {
+                  "type": "string"
+                },
+                "Motif": {
+                  "type": "string",
+                  "enum": [
+                    "HS",
+                    "Perdu"
+                  ]
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "Valider": {
+                  "type": "boolean"
+                },
+                "published_at": {
                   "type": "string"
                 },
                 "created_by": {
@@ -1573,6 +1708,18 @@
             }
           },
           "procedures_utilisateurs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "habillement_eips": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "vehicule_amenagements": {
             "type": "array",
             "items": {
               "type": "string"
