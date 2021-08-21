@@ -658,6 +658,9 @@
           "Date_sortie": {
             "type": "string"
           },
+          "Motif_refus": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -703,6 +706,9 @@
             "type": "string"
           },
           "Date_sortie": {
+            "type": "string"
+          },
+          "Motif_refus": {
             "type": "string"
           },
           "published_at": {

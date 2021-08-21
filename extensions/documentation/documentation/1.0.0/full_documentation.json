@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/21/2021 5:26:05 PM"
+    "x-generation-date": "08/21/2021 5:41:17 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7585,6 +7585,9 @@
           },
           "Date_sortie": {
             "type": "string"
+          },
+          "Motif_refus": {
+            "type": "string"
           }
         }
       },
@@ -7633,6 +7636,9 @@
             "type": "string"
           },
           "Date_sortie": {
+            "type": "string"
+          },
+          "Motif_refus": {
             "type": "string"
           },
           "created_by": {
@@ -7907,6 +7913,9 @@
           },
           "Date_sortie": {
             "type": "string"
+          },
+          "Motif_refus": {
+            "type": "string"
           }
         }
       },
@@ -7955,6 +7964,9 @@
             "type": "string"
           },
           "Date_sortie": {
+            "type": "string"
+          },
+          "Motif_refus": {
             "type": "string"
           },
           "created_by": {
@@ -8095,6 +8107,9 @@
           },
           "Date_sortie": {
             "type": "string"
+          },
+          "Motif_refus": {
+            "type": "string"
           }
         }
       },
@@ -8137,6 +8152,9 @@
             "type": "string"
           },
           "Date_sortie": {
+            "type": "string"
+          },
+          "Motif_refus": {
             "type": "string"
           },
           "created_by": {
@@ -8283,6 +8301,9 @@
           },
           "Date_sortie": {
             "type": "string"
+          },
+          "Motif_refus": {
+            "type": "string"
           }
         }
       },
@@ -8331,6 +8352,9 @@
             "type": "string"
           },
           "Date_sortie": {
+            "type": "string"
+          },
+          "Motif_refus": {
             "type": "string"
           },
           "created_by": {
@@ -8781,6 +8805,9 @@
           "Date_sortie": {
             "type": "string"
           },
+          "Motif_refus": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8826,6 +8853,9 @@
             "type": "string"
           },
           "Date_sortie": {
+            "type": "string"
+          },
+          "Motif_refus": {
             "type": "string"
           },
           "published_at": {
@@ -8970,6 +9000,9 @@
           },
           "Date_sortie": {
             "type": "string"
+          },
+          "Motif_refus": {
+            "type": "string"
           }
         }
       },
@@ -9012,6 +9045,9 @@
             "type": "string"
           },
           "Date_sortie": {
+            "type": "string"
+          },
+          "Motif_refus": {
             "type": "string"
           },
           "created_by": {
@@ -9330,6 +9366,9 @@
                 "Date_sortie": {
                   "type": "string"
                 },
+                "Motif_refus": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -9393,6 +9432,9 @@
                 "Date_sortie": {
                   "type": "string"
                 },
+                "Motif_refus": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -9450,6 +9492,9 @@
                 "Date_sortie": {
                   "type": "string"
                 },
+                "Motif_refus": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -9505,6 +9550,9 @@
                   "type": "string"
                 },
                 "Date_sortie": {
+                  "type": "string"
+                },
+                "Motif_refus": {
                   "type": "string"
                 },
                 "created_by": {
@@ -9601,6 +9649,9 @@
                 "Date_sortie": {
                   "type": "string"
                 },
+                "Motif_refus": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -9656,6 +9707,9 @@
                   "type": "string"
                 },
                 "Date_sortie": {
+                  "type": "string"
+                },
+                "Motif_refus": {
                   "type": "string"
                 },
                 "published_at": {
