@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/20/2021 5:00:41 PM"
+    "x-generation-date": "08/21/2021 5:26:05 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7469,10 +7469,6 @@
           "Num_IMEI": {
             "type": "integer"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -7485,10 +7481,6 @@
           },
           "Prix_TTC": {
             "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -7587,6 +7579,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           }
         }
       },
@@ -7604,10 +7602,6 @@
           "Num_IMEI": {
             "type": "integer"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -7620,10 +7614,6 @@
           },
           "Prix_TTC": {
             "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -7638,6 +7628,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
@@ -7724,19 +7720,11 @@
                 }
               }
             }
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
           }
         }
       },
       "NewCondition-generales": {
         "properties": {
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
           "created_by": {
             "type": "string"
           },
@@ -7794,10 +7782,6 @@
           "Designation": {
             "type": "string"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -7805,12 +7789,8 @@
               "Mauvais",
               "Abime",
               "Trace_usure",
-              "neuf"
+              "Neuf"
             ]
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -7921,6 +7901,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           }
         }
       },
@@ -7929,10 +7915,6 @@
           "Designation": {
             "type": "string"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -7940,12 +7922,8 @@
               "Mauvais",
               "Abime",
               "Trace_usure",
-              "neuf"
+              "Neuf"
             ]
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -7972,6 +7950,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
@@ -7995,25 +7979,18 @@
           "Observations": {
             "type": "string"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
               "Bon",
               "Mauvais",
               "Abime",
-              "Trace_usure"
+              "Trace_usure",
+              "Neuf"
             ]
           },
           "Prix_TTC": {
             "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -8112,6 +8089,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           }
         }
       },
@@ -8123,25 +8106,18 @@
           "Observations": {
             "type": "string"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
               "Bon",
               "Mauvais",
               "Abime",
-              "Trace_usure"
+              "Trace_usure",
+              "Neuf"
             ]
           },
           "Prix_TTC": {
             "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -8156,6 +8132,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
@@ -8185,25 +8167,18 @@
           "num_serie": {
             "type": "string"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
               "Bon",
               "Mauvais",
               "Abime",
-              "Trace_usure"
+              "Trace_usure",
+              "Neuf"
             ]
           },
           "Prix_TTC": {
             "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -8302,6 +8277,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           }
         }
       },
@@ -8319,25 +8300,18 @@
           "num_serie": {
             "type": "string"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
               "Bon",
               "Mauvais",
               "Abime",
-              "Trace_usure"
+              "Trace_usure",
+              "Neuf"
             ]
           },
           "Prix_TTC": {
             "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -8352,6 +8326,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
@@ -8609,10 +8589,6 @@
           "Version": {
             "type": "string"
           },
-          "Date": {
-            "type": "string",
-            "format": "date"
-          },
           "procedures_utilisateurs": {
             "type": "array",
             "items": {
@@ -8643,6 +8619,9 @@
                 }
               }
             }
+          },
+          "Date": {
+            "type": "string"
           }
         }
       },
@@ -8654,15 +8633,14 @@
           "Version": {
             "type": "string"
           },
-          "Date": {
-            "type": "string",
-            "format": "date"
-          },
           "procedures_utilisateurs": {
             "type": "array",
             "items": {
               "type": "string"
             }
+          },
+          "Date": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
@@ -8689,10 +8667,6 @@
           "Prix_TTC": {
             "type": "number"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -8702,10 +8676,6 @@
               "Trace_usure",
               "Neuf"
             ]
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif": {
             "type": "string",
@@ -8805,6 +8775,12 @@
             "type": "boolean",
             "default": false
           },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8822,10 +8798,6 @@
           "Prix_TTC": {
             "type": "number"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -8835,10 +8807,6 @@
               "Trace_usure",
               "Neuf"
             ]
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif": {
             "type": "string",
@@ -8853,6 +8821,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -8880,25 +8854,18 @@
           "Observations": {
             "type": "string"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
               "Bon",
               "Mauvais",
               "Abime",
-              "Trace_usure"
+              "Trace_usure",
+              "Neuf"
             ]
           },
           "Prix_TTC": {
             "type": "integer"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -8997,6 +8964,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           }
         }
       },
@@ -9008,25 +8981,18 @@
           "Observations": {
             "type": "string"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
               "Bon",
               "Mauvais",
               "Abime",
-              "Trace_usure"
+              "Trace_usure",
+              "Neuf"
             ]
           },
           "Prix_TTC": {
             "type": "integer"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -9041,6 +9007,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
@@ -9326,9 +9298,6 @@
                 "Num_IMEI": {
                   "type": "integer"
                 },
-                "Date_ajout": {
-                  "type": "string"
-                },
                 "Etat": {
                   "type": "string",
                   "enum": [
@@ -9342,9 +9311,6 @@
                 "Prix_TTC": {
                   "type": "number"
                 },
-                "Date_sortie": {
-                  "type": "string"
-                },
                 "Motif_sortie": {
                   "type": "string",
                   "enum": [
@@ -9357,6 +9323,12 @@
                 },
                 "Valider": {
                   "type": "boolean"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Date_sortie": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -9389,23 +9361,18 @@
                 "num_serie": {
                   "type": "string"
                 },
-                "Date_ajout": {
-                  "type": "string"
-                },
                 "Etat": {
                   "type": "string",
                   "enum": [
                     "Bon",
                     "Mauvais",
                     "Abime",
-                    "Trace_usure"
+                    "Trace_usure",
+                    "Neuf"
                   ]
                 },
                 "Prix_TTC": {
                   "type": "number"
-                },
-                "Date_sortie": {
-                  "type": "string"
                 },
                 "Motif_sortie": {
                   "type": "string",
@@ -9419,6 +9386,12 @@
                 },
                 "Valider": {
                   "type": "boolean"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Date_sortie": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -9445,23 +9418,18 @@
                 "Observations": {
                   "type": "string"
                 },
-                "Date_ajout": {
-                  "type": "string"
-                },
                 "Etat": {
                   "type": "string",
                   "enum": [
                     "Bon",
                     "Mauvais",
                     "Abime",
-                    "Trace_usure"
+                    "Trace_usure",
+                    "Neuf"
                   ]
                 },
                 "Prix_TTC": {
                   "type": "number"
-                },
-                "Date_sortie": {
-                  "type": "string"
                 },
                 "Motif_sortie": {
                   "type": "string",
@@ -9475,6 +9443,12 @@
                 },
                 "Valider": {
                   "type": "boolean"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Date_sortie": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -9501,23 +9475,18 @@
                 "Observations": {
                   "type": "string"
                 },
-                "Date_ajout": {
-                  "type": "string"
-                },
                 "Etat": {
                   "type": "string",
                   "enum": [
                     "Bon",
                     "Mauvais",
                     "Abime",
-                    "Trace_usure"
+                    "Trace_usure",
+                    "Neuf"
                   ]
                 },
                 "Prix_TTC": {
                   "type": "integer"
-                },
-                "Date_sortie": {
-                  "type": "string"
                 },
                 "Motif_sortie": {
                   "type": "string",
@@ -9531,6 +9500,12 @@
                 },
                 "Valider": {
                   "type": "boolean"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Date_sortie": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -9585,9 +9560,6 @@
                 "Designation": {
                   "type": "string"
                 },
-                "Date_ajout": {
-                  "type": "string"
-                },
                 "Etat": {
                   "type": "string",
                   "enum": [
@@ -9595,11 +9567,8 @@
                     "Mauvais",
                     "Abime",
                     "Trace_usure",
-                    "neuf"
+                    "Neuf"
                   ]
-                },
-                "Date_sortie": {
-                  "type": "string"
                 },
                 "Motif_sortie": {
                   "type": "string",
@@ -9625,6 +9594,12 @@
                 },
                 "Valider": {
                   "type": "boolean"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Date_sortie": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -9654,9 +9629,6 @@
                 "Prix_TTC": {
                   "type": "number"
                 },
-                "Date_ajout": {
-                  "type": "string"
-                },
                 "Etat": {
                   "type": "string",
                   "enum": [
@@ -9666,9 +9638,6 @@
                     "Trace_usure",
                     "Neuf"
                   ]
-                },
-                "Date_sortie": {
-                  "type": "string"
                 },
                 "Motif": {
                   "type": "string",
@@ -9682,6 +9651,12 @@
                 },
                 "Valider": {
                   "type": "boolean"
+                },
+                "Date_ajout": {
+                  "type": "string"
+                },
+                "Date_sortie": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"

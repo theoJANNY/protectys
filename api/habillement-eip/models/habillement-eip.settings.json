@@ -15,9 +15,6 @@
     "Designation": {
       "type": "string"
     },
-    "Date_ajout": {
-      "type": "date"
-    },
     "Etat": {
       "type": "enumeration",
       "enum": [
@@ -25,11 +22,8 @@
         "Mauvais",
         "Abime",
         "Trace_usure",
-        "neuf"
+        "Neuf"
       ]
-    },
-    "Date_sortie": {
-      "type": "date"
     },
     "Motif_sortie": {
       "type": "enumeration",
@@ -58,6 +52,12 @@
     "Valider": {
       "type": "boolean",
       "default": false
+    },
+    "Date_ajout": {
+      "type": "string"
+    },
+    "Date_sortie": {
+      "type": "string"
     }
   }
 }

@@ -544,10 +544,6 @@
           "Prix_TTC": {
             "type": "number"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -557,10 +553,6 @@
               "Trace_usure",
               "Neuf"
             ]
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif": {
             "type": "string",
@@ -660,6 +652,12 @@
             "type": "boolean",
             "default": false
           },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -677,10 +675,6 @@
           "Prix_TTC": {
             "type": "number"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -690,10 +684,6 @@
               "Trace_usure",
               "Neuf"
             ]
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif": {
             "type": "string",
@@ -708,6 +698,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

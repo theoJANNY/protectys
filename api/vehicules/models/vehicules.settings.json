@@ -18,23 +18,18 @@
     "Observations": {
       "type": "richtext"
     },
-    "Date_ajout": {
-      "type": "date"
-    },
     "Etat": {
       "type": "enumeration",
       "enum": [
         "Bon",
         "Mauvais",
         "Abime",
-        "Trace_usure"
+        "Trace_usure",
+        "Neuf"
       ]
     },
     "Prix_TTC": {
       "type": "integer"
-    },
-    "Date_sortie": {
-      "type": "date"
     },
     "Motif_sortie": {
       "type": "enumeration",
@@ -51,6 +46,12 @@
     "Valider": {
       "type": "boolean",
       "default": false
+    },
+    "Date_ajout": {
+      "type": "string"
+    },
+    "Date_sortie": {
+      "type": "string"
     }
   }
 }

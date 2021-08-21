@@ -21,9 +21,6 @@
     "Prix_TTC": {
       "type": "decimal"
     },
-    "Date_ajout": {
-      "type": "date"
-    },
     "Etat": {
       "type": "enumeration",
       "enum": [
@@ -33,9 +30,6 @@
         "Trace_usure",
         "Neuf"
       ]
-    },
-    "Date_sortie": {
-      "type": "date"
     },
     "Motif": {
       "type": "enumeration",
@@ -52,6 +46,12 @@
     "Valider": {
       "type": "boolean",
       "default": false
+    },
+    "Date_ajout": {
+      "type": "string"
+    },
+    "Date_sortie": {
+      "type": "string"
     }
   }
 }

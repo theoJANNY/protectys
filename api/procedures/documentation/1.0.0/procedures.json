@@ -598,10 +598,6 @@
           "Version": {
             "type": "string"
           },
-          "Date": {
-            "type": "string",
-            "format": "date"
-          },
           "procedures_utilisateurs": {
             "type": "array",
             "items": {
@@ -632,6 +628,9 @@
                 }
               }
             }
+          },
+          "Date": {
+            "type": "string"
           }
         }
       },
@@ -643,15 +642,14 @@
           "Version": {
             "type": "string"
           },
-          "Date": {
-            "type": "string",
-            "format": "date"
-          },
           "procedures_utilisateurs": {
             "type": "array",
             "items": {
               "type": "string"
             }
+          },
+          "Date": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

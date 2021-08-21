@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "condition_generales",
   "info": {
-    "name": "Condition générales"
+    "name": "Condition générales",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

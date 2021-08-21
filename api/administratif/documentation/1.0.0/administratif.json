@@ -534,10 +534,6 @@
           "Num_IMEI": {
             "type": "integer"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -550,10 +546,6 @@
           },
           "Prix_TTC": {
             "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -652,6 +644,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           }
         }
       },
@@ -669,10 +667,6 @@
           "Num_IMEI": {
             "type": "integer"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -685,10 +679,6 @@
           },
           "Prix_TTC": {
             "type": "number"
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -703,6 +693,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

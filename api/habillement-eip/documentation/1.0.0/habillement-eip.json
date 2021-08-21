@@ -538,10 +538,6 @@
           "Designation": {
             "type": "string"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -549,12 +545,8 @@
               "Mauvais",
               "Abime",
               "Trace_usure",
-              "neuf"
+              "Neuf"
             ]
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -665,6 +657,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           }
         }
       },
@@ -673,10 +671,6 @@
           "Designation": {
             "type": "string"
           },
-          "Date_ajout": {
-            "type": "string",
-            "format": "date"
-          },
           "Etat": {
             "type": "string",
             "enum": [
@@ -684,12 +678,8 @@
               "Mauvais",
               "Abime",
               "Trace_usure",
-              "neuf"
+              "Neuf"
             ]
-          },
-          "Date_sortie": {
-            "type": "string",
-            "format": "date"
           },
           "Motif_sortie": {
             "type": "string",
@@ -716,6 +706,12 @@
           "Valider": {
             "type": "boolean",
             "default": false
+          },
+          "Date_ajout": {
+            "type": "string"
+          },
+          "Date_sortie": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

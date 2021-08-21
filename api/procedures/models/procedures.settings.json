@@ -30,12 +30,12 @@
     "Version": {
       "type": "string"
     },
-    "Date": {
-      "type": "date"
-    },
     "procedures_utilisateurs": {
       "collection": "procedures-utilisateur",
       "via": "procedure"
+    },
+    "Date": {
+      "type": "string"
     }
   }
 }
