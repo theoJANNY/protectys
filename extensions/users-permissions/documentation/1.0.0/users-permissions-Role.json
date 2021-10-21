@@ -603,6 +603,67 @@
                     "type": "string"
                   }
                 },
+                "groupes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "procedure_validees": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "procedures": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "file": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "Version": {
+                  "type": "string"
+                },
+                "procedures_utilisateurs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Date": {
+                  "type": "string"
+                },
+                "users_permissions_role": {
+                  "type": "string"
+                },
+                "groupes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -636,6 +697,12 @@
             }
           },
           "users": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "procedures": {
             "type": "array",
             "items": {
               "type": "string"

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "procedure_validees",
+  "info": {
+    "name": "Procédure Validée",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "procedure_validees"
+    },
+    "procedure": {
+      "model": "procedures"
+    },
+    "DateValidation": {
+      "type": "datetime"
+    }
+  }
+}

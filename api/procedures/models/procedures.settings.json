@@ -36,6 +36,15 @@
     },
     "Date": {
       "type": "string"
+    },
+    "users_permissions_role": {
+      "plugin": "users-permissions",
+      "model": "role",
+      "via": "procedures"
+    },
+    "groupes": {
+      "via": "procedures",
+      "collection": "groupe"
     }
   }
 }

@@ -86,6 +86,14 @@
     "vehicule_amenagements": {
       "via": "users_permissions_user",
       "collection": "vehicule-amenagement"
+    },
+    "groupes": {
+      "via": "users_permissions_users",
+      "collection": "groupe"
+    },
+    "procedure_validees": {
+      "via": "users_permissions_user",
+      "collection": "procedure-validee"
     }
   }
 }

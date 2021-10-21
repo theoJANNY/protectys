@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/outillages-a-mains": {
+    "/groupes": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,10 +10,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Groupe"
                   }
                 }
               }
@@ -52,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Groupe"
         ],
         "parameters": [
           {
@@ -202,11 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Groupe"
                 }
               }
             }
@@ -244,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Groupe"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOutillages-a-main"
+                "$ref": "#/components/schemas/NewGroupe"
               }
             }
           }
         }
       }
     },
-    "/outillages-a-mains/count": {
+    "/groupes/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -270,8 +265,8 @@
               "application/json": {
                 "schema": {
                   "properties": {
-                    "foo": {
-                      "type": "string"
+                    "count": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -311,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Groupe"
         ],
         "parameters": []
       }
     },
-    "/outillages-a-mains/{id}": {
+    "/groupes/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -326,11 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Groupe"
                 }
               }
             }
@@ -368,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Groupe"
         ],
         "parameters": [
           {
@@ -392,11 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Groupe"
                 }
               }
             }
@@ -434,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Groupe"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOutillages-a-main"
+                "$ref": "#/components/schemas/NewGroupe"
               }
             }
           }
@@ -508,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Groupe"
         ],
         "parameters": [
           {
@@ -527,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Outillages-a-main": {
+      "Groupe": {
         "required": [
           "id"
         ],
@@ -535,189 +522,178 @@
           "id": {
             "type": "string"
           },
-          "Designation": {
+          "Nom": {
             "type": "string"
           },
-          "Observations": {
-            "type": "string"
-          },
-          "Etat": {
-            "type": "string",
-            "enum": [
-              "Bon",
-              "Mauvais",
-              "Abime",
-              "Trace_usure",
-              "Neuf"
-            ]
-          },
-          "Prix_TTC": {
-            "type": "number"
-          },
-          "Motif_sortie": {
-            "type": "string",
-            "enum": [
-              "HS",
-              "Perdu"
-            ]
-          },
-          "users_permissions_user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "administratifs": {
-                "type": "array",
-                "items": {
+          "users_permissions_users": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "username",
+                "email"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                },
+                "resetPasswordToken": {
+                  "type": "string"
+                },
+                "confirmationToken": {
+                  "type": "string"
+                },
+                "confirmed": {
+                  "type": "boolean"
+                },
+                "blocked": {
+                  "type": "boolean"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "administratifs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "outillages": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "outillages_a_mains": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "vehicules": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "procedures_utilisateurs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "habillement_eips": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "vehicule_amenagements": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "groupes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "procedure_validees": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "outillages": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "outillages_a_mains": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "vehicules": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "procedures_utilisateurs": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "habillement_eips": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "vehicule_amenagements": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "groupes": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "procedure_validees": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
-          "Valider": {
-            "type": "boolean",
-            "default": false
-          },
-          "Date_ajout": {
-            "type": "string"
-          },
-          "Date_sortie": {
-            "type": "string"
-          },
-          "Motif_refus": {
-            "type": "string"
+          "procedures": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "file": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "Version": {
+                  "type": "string"
+                },
+                "procedures_utilisateurs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Date": {
+                  "type": "string"
+                },
+                "users_permissions_role": {
+                  "type": "string"
+                },
+                "groupes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
-      "NewOutillages-a-main": {
+      "NewGroupe": {
         "properties": {
-          "Designation": {
+          "Nom": {
             "type": "string"
           },
-          "Observations": {
-            "type": "string"
+          "users_permissions_users": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
-          "Etat": {
-            "type": "string",
-            "enum": [
-              "Bon",
-              "Mauvais",
-              "Abime",
-              "Trace_usure",
-              "Neuf"
-            ]
-          },
-          "Prix_TTC": {
-            "type": "number"
-          },
-          "Motif_sortie": {
-            "type": "string",
-            "enum": [
-              "HS",
-              "Perdu"
-            ]
-          },
-          "users_permissions_user": {
-            "type": "string"
-          },
-          "Valider": {
-            "type": "boolean",
-            "default": false
-          },
-          "Date_ajout": {
-            "type": "string"
-          },
-          "Date_sortie": {
-            "type": "string"
-          },
-          "Motif_refus": {
-            "type": "string"
+          "procedures": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"
@@ -729,5 +705,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Groupe"
+    }
+  ]
 }

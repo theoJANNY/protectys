@@ -640,6 +640,18 @@
                   "type": "string"
                 }
               },
+              "groupes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "procedure_validees": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },

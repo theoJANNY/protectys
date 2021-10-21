@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groupes",
+  "info": {
+    "name": "Groupe",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "groupes",
+      "dominant": true
+    },
+    "procedures": {
+      "collection": "procedures",
+      "via": "groupes",
+      "dominant": true
+    }
+  }
+}

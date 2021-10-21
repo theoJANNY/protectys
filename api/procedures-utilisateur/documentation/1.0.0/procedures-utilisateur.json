@@ -614,6 +614,18 @@
                   "type": "string"
                 }
               },
+              "groupes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "procedure_validees": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },
@@ -649,10 +661,19 @@
               "Version": {
                 "type": "string"
               },
+              "procedures_utilisateurs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "Date": {
                 "type": "string"
               },
-              "procedures_utilisateurs": {
+              "users_permissions_role": {
+                "type": "string"
+              },
+              "groupes": {
                 "type": "array",
                 "items": {
                   "type": "string"

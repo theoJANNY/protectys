@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/procedure-validees",
+      "handler": "procedure-validee.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/procedure-validees/count",
+      "handler": "procedure-validee.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/procedure-validees/:id",
+      "handler": "procedure-validee.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/procedure-validees",
+      "handler": "procedure-validee.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/procedure-validees/:id",
+      "handler": "procedure-validee.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/procedure-validees/:id",
+      "handler": "procedure-validee.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

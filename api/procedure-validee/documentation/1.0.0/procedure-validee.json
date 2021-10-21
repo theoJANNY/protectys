@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/outillages-a-mains": {
+    "/procedure-validees": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedure-validee"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedure-validee"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOutillages-a-main"
+                "$ref": "#/components/schemas/NewProcedure-validee"
               }
             }
           }
         }
       }
     },
-    "/outillages-a-mains/count": {
+    "/procedure-validees/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedure-validee"
         ],
         "parameters": []
       }
     },
-    "/outillages-a-mains/{id}": {
+    "/procedure-validees/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedure-validee"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedure-validee"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOutillages-a-main"
+                "$ref": "#/components/schemas/NewProcedure-validee"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Outillages-a-main"
+          "Procedure-validee"
         ],
         "parameters": [
           {
@@ -527,39 +527,13 @@
   },
   "components": {
     "schemas": {
-      "Outillages-a-main": {
+      "Procedure-validee": {
         "required": [
           "id"
         ],
         "properties": {
           "id": {
             "type": "string"
-          },
-          "Designation": {
-            "type": "string"
-          },
-          "Observations": {
-            "type": "string"
-          },
-          "Etat": {
-            "type": "string",
-            "enum": [
-              "Bon",
-              "Mauvais",
-              "Abime",
-              "Trace_usure",
-              "Neuf"
-            ]
-          },
-          "Prix_TTC": {
-            "type": "number"
-          },
-          "Motif_sortie": {
-            "type": "string",
-            "enum": [
-              "HS",
-              "Perdu"
-            ]
           },
           "users_permissions_user": {
             "required": [
@@ -660,64 +634,69 @@
               }
             }
           },
-          "Valider": {
-            "type": "boolean",
-            "default": false
+          "procedure": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "file": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Name": {
+                "type": "string"
+              },
+              "Version": {
+                "type": "string"
+              },
+              "procedures_utilisateurs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "Date": {
+                "type": "string"
+              },
+              "users_permissions_role": {
+                "type": "string"
+              },
+              "groupes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
-          "Date_ajout": {
-            "type": "string"
-          },
-          "Date_sortie": {
-            "type": "string"
-          },
-          "Motif_refus": {
-            "type": "string"
+          "DateValidation": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
-      "NewOutillages-a-main": {
+      "NewProcedure-validee": {
         "properties": {
-          "Designation": {
-            "type": "string"
-          },
-          "Observations": {
-            "type": "string"
-          },
-          "Etat": {
-            "type": "string",
-            "enum": [
-              "Bon",
-              "Mauvais",
-              "Abime",
-              "Trace_usure",
-              "Neuf"
-            ]
-          },
-          "Prix_TTC": {
-            "type": "number"
-          },
-          "Motif_sortie": {
-            "type": "string",
-            "enum": [
-              "HS",
-              "Perdu"
-            ]
-          },
           "users_permissions_user": {
             "type": "string"
           },
-          "Valider": {
-            "type": "boolean",
-            "default": false
-          },
-          "Date_ajout": {
+          "procedure": {
             "type": "string"
           },
-          "Date_sortie": {
-            "type": "string"
-          },
-          "Motif_refus": {
-            "type": "string"
+          "DateValidation": {
+            "type": "string",
+            "format": "date-time"
           },
           "created_by": {
             "type": "string"
